@@ -1,0 +1,96 @@
+body{
+    color: #ffffff;
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+
+}
+
+.page {
+    min-height: 100vh;
+    height: 300vh;
+    background: url(../img/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Source Code Pro", monospace;
+    font-style: normal;
+
+
+    display: none ;
+}
+
+.text {
+    max-width: 600px;
+    position: absolute;
+    bottom: 13%;
+    left: 7%;
+}
+
+.title {
+    font-size: 3.5em;
+    /* margin-bottom: 0.5em; */
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 50px;
+
+    position: absolute;
+    bottom: 6%;
+    left: 7%;
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+    /* перефарбовує чорні SVG у білі */
+    filter: brightness(0) invert(1);
+}
+
+
+
+.wrapper{
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+body, html {
+  margin: 0;
+  height: 200vh; /* довший скрол */
+}
+
+.bg-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease-out;
+}
+
+.original {
+  background-image: url('../img/original.png');
+  z-index: 1;
+}
+
+.sorted {
+  background-image: url('../img/sorted2.png');
+  z-index: 2;
+  opacity: 0;
+}
+
+
