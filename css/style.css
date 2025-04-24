@@ -63,7 +63,8 @@ body{
 body, html {
   margin: 0;
   /*  height: 200vh;  */
-  height: calc(var(--vh, 1vh) * 200);
+/*   height: calc(var(--vh, 1vh) * 200); */
+    height: 200dvh;
 }
 
 .bg-container {
