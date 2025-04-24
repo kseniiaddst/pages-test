@@ -108,13 +108,19 @@
 
     <script>
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const maxScroll = window.innerHeight; // 200vh = 1 extra screen
   let progress = Math.min(scrollY / maxScroll, 1);
-
-  // ease-in функція (quadratic)
   const eased = progress * progress;
 
   document.querySelector('.sorted').style.opacity = eased;
